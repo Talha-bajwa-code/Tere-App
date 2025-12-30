@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo, .footer-logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #75bf7a;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.help-btn {
+    background-color: #75bf7a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    padding: 50px 8%;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-btns .store-btn {
+    background: black;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.apply-banner {
+    background-color: #75bf7a;
+    padding: 30px 8%;
+    color: white;
+}
+
+.banner-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.input-group button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.how-it-works {
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.highlight {
+    color: #75bf7a;
+}
+
+.sub-text {
+    max-width: 600px;
+    margin: 20px auto 50px;
+    color: #888;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.phone-circle {
+    width: 300px;
+    height: 300px;
+    background-color: #75bf7a;
+    border-radius: 50%;
+}
+
+.steps-left, .steps-right {
+    width: 30%;
+    text-align: left;
+}
+
+.step-item {
+    margin-bottom: 40px;
+}
+
+.step-item span {
+    color: #75bf7a;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #75bf7a;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.benefits {
+    padding: 80px 8%;
+    background-color: #f9f9f9;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.benefit-card {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.benefit-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.benefit-num {
+    font-size: 40px;
+    color: #75bf7a;
+    font-weight: bold;
+    display: block;
+}
+
+footer {
+    padding: 50px 8%;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    gap: 40px;
+    color: #666;
+    font-size: 14px;
+}
+/* Media Query for Mobile Devices (768px se kam screen ke liye) */
+@media (max-width: 768px) {
+    
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero Section adjustments */
+    .hero {
+        flex-direction: column;
+        padding: 30px 5%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    /* Apply Banner adjustments */
+    .banner-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+
+    /* How it Works Section adjustments */
+    .steps-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .steps-left, .steps-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .phone-circle {
+        width: 200px;
+        height: 200px;
+        order: -1; /* Circle ko upar dikhane ke liye */
+    }
+
+    .step-item {
+        margin-bottom: 30px;
+    }
+
+    /* Benefits Section adjustments */
+    .benefit-card, .benefit-card.reverse {
+        flex-direction: column; /* Images aur text ek ke niche ek */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .benefit-img {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
